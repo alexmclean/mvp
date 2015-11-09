@@ -19,26 +19,53 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
+  QuickSport: The easiest and most efficient way to organize and manage sports teams!
+
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+
+  Intramural captains and motivated organizers have to struggle with keeping track of teams and players, but my app
+  will do all of the legwork for them.
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  QuickSport will help team captains sign up teams, add team members, and communicate with their teammates about
+  logistics for their upcoming games.  Maybe Josh hasn't paid you his registration fee for your recreational league basketball team?
+  Maybe Sam can't make it to dodgeball on Wednesday night and you need to replace him?  Organizing anything from a 
+  team party to a change of location for your next game is organized in one place to make running a team as easy as possible.
+
 ## Problem ##
   > Describe the problem your product solves.
+
+  Those of us who have ever been intramural or recreational league captains for a team know that organizing people is difficult.
+  Conflicts come up in people's lives that prevent them from showing up, plans get changed last minute, people forget to pay 
+  or bring equipment; the point is: logistics are a pain in the ass.  QuickSport aims to organize all of the actions
+  you might need to take as captain in one place and optimize the user experience of maintaining a team.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+  By creating a team and signing up your players, you are placing them in an easy to use communication system
+  that allows you to remind them about whatever issues the team has.  Ideally, we want to connect you through facebook
+  and allow you to communicate either publically with your whole team, or privately with one member if the issue does not
+  concern everyone.  
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+
+  "We're bringing amateur sports closer together, one team at a time."
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+  All you need to do to get started is log in with Facebook, and click "Create a Team."  This will immediately give you access to all the features required to run your team efficiently and add new members.
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+
+  "My bike polo team was in disarray after our star striker broke his leg, but I was able to rally everyone using QuickSport!"
+  - Some Guy
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.

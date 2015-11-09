@@ -1,0 +1,11 @@
+<div ng-controller="TeamsController">
+  You're in teams!
+  <button ng-click="makeTeam()">Make a team</button>
+  <div class="teamContainer" ng-repeat="team in data">
+    {{team.teamname}}
+    {{team.sport}}
+    <div class="players" ng-repeat="member in team.members">
+      {{member}}
+    </div>
+  </div>
+</div>

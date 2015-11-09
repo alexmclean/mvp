@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>QuickSport</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body ng-app="myApp">
+    <h1>QuickSport</h1>
+    <div class="navigation">
+      <ul>
+        <a ui-sref="/home"><li>Home</li></a>
+        <a ui-sref="/teams"><li>My Teams</li></a>
+        <a><li>Logout</li></a>
+      </ul>
+    </div>
+    <div ui-view>
+
+    </div>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app/controllers/teams.js"></script>
+    <script src="app/controllers/teamBuilder.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+<div>
+  Making a team!
+  <form ng-controller="TeamBuildController">
+    <input name="teamNameInput" placeholder="Enter your team name">
+    <select>
+      <option ng-repeat="sport in sports">{{sport}}</option>
+    </select>
+    <button>Create</button>
+  </form>
+</div>

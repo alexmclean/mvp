@@ -1,4 +1,9 @@
-var myApp = angular.module('myApp', [ 'quicksport.teams', 'quicksport.teambuilder','ui.router']);
+var myApp = angular.module('myApp', [ 
+  'quicksport.teams', 
+  'quicksport.factories', 
+  'quicksport.teambuilder',
+  'quicksport.teampage',
+  'ui.router']);
 
 myApp.config(function ($stateProvider) {
   console.log('hello');
@@ -16,5 +21,10 @@ myApp.config(function ($stateProvider) {
       url:'/teamBuilder',
       templateUrl: 'teamBuilder.html',
       controller: 'TeamBuildController'
+    })
+    .state('/team', {
+      url:'/team',
+      templateUrl: 'team.html',
+      controller: 'TeamPageController'
     });
   });

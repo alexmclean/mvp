@@ -1,11 +1,22 @@
+body {
+  background-color: #E4E4E4;
+}
+
 a {
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
+  margin-top: 10px;
+  margin-left:20px;
 }
 
 h1 {
   color: #0099FF;
+}
+
+.logoutButton {
+  float: right;
+  margin-right: 30px;
 }
 
 .navigation {
@@ -50,6 +61,7 @@ h1 {
 
 .players {
   background-color: purple;
+  padding: 0px 20px;
 }
 
 .createContainer {
@@ -59,6 +71,7 @@ h1 {
   margin-top: 50px;
   padding: 20px;
   border-radius: 10px;
+  color: white;
 }
 
 .teamFullView {
@@ -69,6 +82,59 @@ h1 {
   border-radius: 10px;
   color: white;
   padding: 20px;
+}
+
+select {
+  height: 25px;
+  width: 100px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+}
+
+.teamDisplay {
+  display: inline;
+}
+
+.unpaid {
+  background-color: #A40000;
+}
+
+.makeButtonContainer {
+  background-color: #1AA3FF;
+  width: 50%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.addTitle {
+  display: inline;
+}
+
+.paid {
+  background-color: #006E25;
+}
+
+.paidPad {
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+tr {
+  height: 40px;
+}
+
+td {
+  width: 100px;
+}
+
+h3 {
+  float: right;
 }
 
 button {

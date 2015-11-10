@@ -2,10 +2,11 @@ angular.module('quicksport.teams', [])
 
 
 .controller('TeamsController', function ($scope, $location, $state, Teams) {
-  $scope.data = [{teamname: "Blackhawks", sport: "Lacrosse", members: ["Alice", "Sam", "Josh"]}, 
-                {teamname:"Cougars", sport:"Soccer", members: ["Aex", "Brad", "Sally"]}];
 
-  $scope.teams = Teams.getTeams();
+  Teams.getTeams(function (data){
+    $scope.data = data;
+  });
+
   $scope.navToTeamPage = function (ind){
     Teams.navToTeam($scope.data[ind]);
   };

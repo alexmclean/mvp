@@ -1,11 +1,13 @@
 <div ng-controller="TeamsController">
-  You're in teams!
-  <button ng-click="makeTeam()">Make a team</button>
+  <div class="makeButtonContainer">
+    <h2>Don't see your team?  Create one!</h2>
+    <button ng-click="makeTeam()">Make a team</button>
+  </div>
   <div class="teamContainer" ng-repeat="team in data" ng-click="navToTeamPage($index)">
-    {{team.teamname}}
-    {{team.sport}}
-    <div class="players" ng-repeat="member in team.members">
-      {{member}}
+    <div>
+      <h2 class="teamDisplay">{{team.teamName}}</h2>
+      <h3 class="teamDisplay">{{team.sport}}</h3>
     </div>
+    <div>{{team.members.length}} Members</div>
   </div>
 </div>

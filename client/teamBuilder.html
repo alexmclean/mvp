@@ -1,10 +1,11 @@
 <div class="createContainer">
-  Making a team!
+  <h2>Create your team!</h2>
   <form ng-controller="TeamBuildController">
-    <input name="teamNameInput" placeholder="Enter your team name">
-    <select name="sportSelector">
+    <input ng-model="team.teamName" placeholder="Enter your team name">
+    <select ng-model="team.sport" name="sportSelector">
+      <option value="" disabled selected>Select your sport!</option>
       <option ng-repeat="sport in sports">{{sport}}</option>
     </select>
-    <button ng-click="postTeam()">Create</button>
+    <button ng-click="postTeam(team)">Create</button>
   </form>
 </div>

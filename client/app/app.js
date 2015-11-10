@@ -6,10 +6,13 @@ var myApp = angular.module('myApp', [
   'ui.router']);
 
 myApp.config(function ($stateProvider) {
-  console.log('hello');
   $stateProvider
     .state('/home', {
       url:'/home',
+      templateUrl: 'home.html'
+    })
+    .state('/', {
+      url: '/home',
       templateUrl: 'home.html'
     })
     .state('/teams', {

@@ -1,5 +1,28 @@
 <div class="teamFullView" ng-controller="TeamPageController">
-  {{team.teamname}}
-  {{team.sport}}
-  <div ng-repeat="member in team.members">{{member}}</div>
+  <div>
+    <h2 class="addTitle">{{team.teamName}}</h2>
+    <h3 class="addTitle">{{team.sport}}</h3>
+  </div>
+  <div>
+    <table>
+      <tr ng-repeat="member in team.members">
+        <td>{{member.name}}</td>
+        <td>{{member.email}}</td>
+        <td ng-class="{paid: member.paid, unpaid: !member.paid}" ng-click="updatePayment($index)"><div class="paidPad">Paid</div></td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <h4>Add a member: </h4>
+    <input ng-model="member.name" placeholder="Name">
+    <input ng-model="member.email" placeholder="Email">
+    <button ng-click="addPlayer(member)">Add</button>
+  </div>
+  <div>
+    <h4>Add a Game to your calendar:</h4>
+    <input ng-model="game.opponent" placeholder="Opponent">
+    <input type="date" ng-model="game.date">
+    <input type="time" ng-model="game.time">
+    <button ng-click="addGame(game)">Add</button>
+  </div>
 </div>

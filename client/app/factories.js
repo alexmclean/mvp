@@ -48,21 +48,18 @@ angular.module('quicksport.factories', [])
   };
 
   var addGame = function (team, gameTime){
-    console.log(team);
-    console.log(gameTime);
-    var endTime = new Date(gameTime.getTime()+ 6000000);
-    console.log(endTime);
+    var endTime = new Date(gameTime.getTime()+ 3600000);
     var event = {
       'summary': 'Game for '+ team.teamName,
       //'location': '800 Howard St., San Francisco, CA 94103',
-      //'description': 'A chance to hear more about Google\'s developer products.',
+      //'description': '',
       'start': {
         'dateTime': gameTime
       },
       'end': {
         'dateTime': endTime
       },
-      /*
+      /* if we want to email the other members of your team
       'attendees': [
         {'email': 'lpage@example.com'},
         {'email': 'sbrin@example.com'}
@@ -70,12 +67,10 @@ angular.module('quicksport.factories', [])
       */
     };
     var CLIENT_ID = '34060817271-5kbksejp5a09ioivdi5as3f7gf5ct9hi.apps.googleusercontent.com';
-
+    //Client secret: RyLtlbTafI4RsAAIa9P9D9Gn
     var SCOPES = ["https://www.googleapis.com/auth/calendar"];
 
-    /**
-     * Check if current user has authorized this application.
-     */
+    //Check if current user has authorized this application.
     function checkAuth() {
       gapi.auth.authorize(
         {
@@ -84,11 +79,11 @@ angular.module('quicksport.factories', [])
           'immediate': true
         }, loadCalendarApi);
     };
-
+    //load Google Calendar API
     function loadCalendarApi() {
         gapi.client.load('calendar', 'v3', sendEvent);
     };
-
+    //Create and send event to Google Calendar with our client ID
     var sendEvent = function (){
       var request = gapi.client.calendar.events.insert({
         'calendarId': 'primary',

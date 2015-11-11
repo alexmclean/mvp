@@ -2,7 +2,7 @@
   <h2>Create your team!</h2>
   <form ng-controller="TeamBuildController">
     <input ng-model="team.teamName" placeholder="Enter your team name">
-    <select ng-model="team.sport" name="sportSelector">
+    <select ng-model="team.sport" name="sportSelector" class="selectSport">
       <option value="" disabled selected>Select your sport!</option>
       <option ng-repeat="sport in sports">{{sport}}</option>
     </select>

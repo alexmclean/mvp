@@ -8,7 +8,7 @@
       <tr ng-repeat="member in team.members">
         <td>{{member.name}}</td>
         <td>{{member.email}}</td>
-        <td ng-class="{paid: member.paid, unpaid: !member.paid}" ng-click="updatePayment($index)"><div class="paidPad">Paid</div></td>
+        <td ng-class="{paid: member.paid, unpaid: !member.paid}" ng-click="updatePayment($index)"><div class="paidPad">{{member.paid ? "Paid" : "Unpaid"}}</div></td>
       </tr>
     </table>
   </div>
@@ -18,6 +18,8 @@
     <input ng-model="member.email" placeholder="Email">
     <button ng-click="addPlayer(member)">Add</button>
   </div>
+  <h4>Your next game is at:</h4>
+  <iframe width="360" height="275" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ39yfR0mHhYARhr7it8Iv6y4&key=AIzaSyAwxxaZGtk2tTD-o7GzkCY5NximEq7lwvQ" allowfullscreen></iframe>
   <div>
     <h4>Add a Game to your calendar:</h4>
     <input ng-model="game.opponent" placeholder="Opponent">

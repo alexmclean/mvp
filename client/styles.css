@@ -1,17 +1,22 @@
-body {
-  background-color: #E4E4E4;
-}
 
 a {
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   text-decoration: none;
   margin-top: 10px;
   margin-left:20px;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 h1 {
+  font-size: 50px;
   color: #0099FF;
+  font-family: 'Cuprum', sans-serif;
+  width: 15%;
+  margin: auto;
 }
 
 .logoutButton {
@@ -33,7 +38,7 @@ h1 {
 
 .navigation li {
   float: left;
-  margin: 5px;
+  margin: 10px 20px;
 }
 
 .navigation li a {
@@ -56,7 +61,7 @@ h1 {
   margin: auto;
   margin-top: 30px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .players {
@@ -72,6 +77,7 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   color: white;
+  text-align: center;
 }
 
 .teamFullView {
@@ -125,6 +131,10 @@ select {
   border-radius: 10px;
 }
 
+.selectSport {
+  margin: 10px;
+}
+
 tr {
   height: 40px;
 }
@@ -135,6 +145,10 @@ td {
 
 h3 {
   float: right;
+}
+
+table {
+  margin-top: 20px;
 }
 
 button {
